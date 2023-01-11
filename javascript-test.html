@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript Timed Test</title>
+    <link rel="stylesheet" href="javascript-test.css">
+</head>
+<body>
+    <nav>
+    <h1>Javascript Timed Test</h1>
+    </nav>
+    <main>
+    <h2>Enter Your Name And Click Start Test To Begin</h2>
+    <label for="Name">Name:</label>
+        <input type="text" id="username" name="Name" placeholder="Enter Your Name To Save Score" required>
+        <button id="userScore">Click To Save Score</button> <br>
+    <h3 id="timer">Timer: </h3>
+
+    <button id="timerButton">Start Test</button>
+    <div id="score">
+        <p>Your Score:</p>
+    </div>
+    <div id="lastScore">
+        <p>Your Last Score:</p>
+    </div>
+    
+    <div id="quest1" class="question"><p class="questions">What does NaN mean?</p>
+        <button id="choice1q1" class="btn quest1Choice">Uncaught reference error</button> <br>  
+        <button id="choice1q2" class="btn quest1Choice">Variable is not a string</button>  <br>
+        <button id="choice1q3" class="btn quest1ChoiceR">Variable is not a number</button>  <br> 
+        <button id="choice1q4" class="btn quest1Choice">Javascript file not being referenced</button>  <br> 
+    </div>  
+
+    <div id="quest2" class="question"><p class="questions">What does document.querySelector() return?</p>
+        <button id="quest2Choice1" class="quest2Choice btn">It returns all elements with given selector</button> <br>  
+        <button id="quest2Choice2" class="quest2Choice btn">It returns all elements on page</button>  <br>
+        <button id="quest2Choice3" class="quest2ChoiceR btn">It returns first selected item with given selector</button>  <br> 
+        <button id="quest2Choice4" class="quest2Choice btn">It converts an array to string</button>  <br> 
+    </div>
+
+    <div id="quest3" class="question"><p class="questions">What does localStorage.setItem() do? </p>
+        <button id="quest3Choice1" class="quest3Choice btn">It retrieves item from local storage</button> <br>  
+        <button id="quest3Choice2" class="quest3Choice btn">It deletes all items saved in local storage</button>  <br>
+        <button id="quest3Choice3" class="quest3ChoiceR btn">It allows you to set an item to storage taking two parameters</button>  <br> 
+        <button id="quest3Choice4" class="quest3Choice btn">It reloads the browser</button>  <br> 
+    </div>
+
+    <div id="quest4" class="question"><p class="questions">What does document.getElementById() return?</p>
+        <button id="quest4Choice1" class="quest4ChoiceR question4 btn">It returns element with given id selector in parentheses</button> <br>  
+        <button id="quest4Choice2" class="quest4Choice question4 btn">It returns all elements on page</button>  <br>
+        <button id="quest4Choice3" class="quest4Choice question4 btn">It selects an elements on page with give class selector</button>  <br> 
+        <button id="quest4Choice4" class="quest4Choice question4 btn">It returns the first object on a webpage</button>  <br> 
+    </div>
+
+    <div id="quest5" class="question"><p class="questions">What is the correct way to start a for loop?</p>
+        <button id="quest5Choice1" class="quest5Choice question5 btn">for(var 0; let i &lt; number; i++){}</button> <br>  
+        <button id="quest5Choice2" class="quest5Choice question5 btn">for(var i = 0; let i &lt; number; i){}</button>  <br>
+        <button id="quest5Choice3" class="quest5Choice question5 btn">for (var i++, i = 0, i &lt; number;){}</button>  <br> 
+        <button id="quest5Choice4" class="quest5ChoiceR question5 btn">for(var i = 0; i &lt; number; i++){}</button>  <br> 
+    </div>
+
+    <div id="quest6" class="question"><p class="questions">What does setInterval() do ?</p>
+        <button id="quest6Choice1" class="quest6ChoiceR question6 btn">It takes a function in first parameter and runs it the amount of time given in second parameter in miliseconds </button> <br>  
+        <button id="quest6Choice2" class="quest6Choice question6 btn">It counts down a specified number </button>  <br>
+        <button id="quest6Choice3" class="quest6Choice question6 btn">It clears brower history</button>  <br> 
+        <button id="quest6Choice4" class="quest6Choice question6 btn">It runs a function only for a certain period of time</button>  <br> 
+    </div>
+
+    <div id="quest7" class="question"><p class="questions">What does document.addEventListener() do? </p>
+        <button id="quest7Choice1" class="quest7Choice question7 btn">It adds text to the document </button> <br>  
+        <button id="quest7Choice2" class="quest7ChoiceR question7 btn">It waits for an event then it runs a function </button>  <br>
+        <button id="quest7Choice3" class="quest7Choice question7 btn">It calculates all of the numbers on the document together</button>  <br> 
+        <button id="quest7Choice4" class="quest7Choice question7 btn">It loops through all events in a webpage and runs them at once when called</button>  <br> 
+    </div>
+
+    <div id="quest8" class="question"><p class="questions">What does i++ do in a for loop?</p>
+        <button id="quest8Choice1" class="quest8ChoiceR question8 btn">It iterates over all of the elements given the condition</button> <br>  
+        <button id="quest8Choice2" class="quest8Choice question8 btn">It adds two strings together </button>  <br>
+        <button id="quest8Choice3" class="quest8Choice question8 btn">It is a shorthand to find the square root of two numbers</button>  <br> 
+        <button id="quest8Choice4" class="quest8Choice question8 btn">It returns the number of characters in a strong</button>  <br> 
+    </div>
+
+    <div id="quest9" class="question"><p class="questions">What does appendChild() do?</p>
+        <button id="quest9Choice1" class="quest9Choice question9 btn">It creates new HTML Element </button> <br>  
+        <button id="quest9Choice2" class="quest9ChoiceR question9 btn">It adds created HTML Element to selected element</button>  <br>
+        <button id="quest9Choice3" class="quest9Choice question9 btn">It changes the color of element</button>  <br> 
+        <button id="quest9Choice4" class="quest9Choice question9 btn">It adds new text to HTML Element specified</button>  <br> 
+    </div>
+
+    <div id="quest10" class="question"><p class="questions">What does querySelectorAll() return?  </p>
+        <button id="quest10Choice1" class="quest10Choice question10 btn">It returns all elements on page </button> <br>  
+        <button id="quest10Choice2" class="quest10Choice question10 btn">It returns the values of all elements on page</button>  <br>
+        <button id="quest10Choice3" class="quest10ChoiceR question10 btn">It returns a Nodelist of Elements given what selector was used in paretheses</button>  <br> 
+        <button id="quest10Choice4" class="quest10Choice question10 btn">It ony returns all block elements </button>  <br> 
+    </div>
+    <div id="getScore" class="question">
+        <button class="btn">Get Score </button>
+
+    </div>
+    <div id="officialScore" class="question">
+     <p>Your Score:</p>
+
+    </div>
+
+    </main>
+
+<script src="javascript-test.js"></script>
+</body>
+</html>
